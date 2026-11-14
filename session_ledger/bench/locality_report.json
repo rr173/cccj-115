@@ -1,0 +1,106 @@
+{
+  "gap_ms": 10,
+  "giant_segment": {
+    "cost_note": "rows read equals the component size, not the database size; read=20000 vs events=20000, peak memory stays bounded by cursor batches (1604.7 KiB)",
+    "events": 20000,
+    "forced_full_component_reread": {
+      "boundary_probes": 2,
+      "effective_changes": 1,
+      "elapsed_ms": 261.671,
+      "index_lookups": 7,
+      "noops": 0,
+      "per_user": {
+        "alice": {
+          "anchors": 2,
+          "boundary_probes": 2,
+          "index_lookups": 6,
+          "resegment_rows_read": 20000,
+          "sessions_created": 2,
+          "sessions_removed": 1
+        }
+      },
+      "resegment_rows_read": 20000,
+      "sessions_after": 2,
+      "sessions_before": 1,
+      "tracemalloc_peak_kib": 1604.7
+    }
+  },
+  "sparse_world": {
+    "active_events": 48000,
+    "alice_segments": 20000,
+    "bob_segments": 8000,
+    "bridge_insert": {
+      "boundary_probes": 2,
+      "effective_changes": 8,
+      "elapsed_ms": 7.069,
+      "index_lookups": 14,
+      "noops": 0,
+      "per_user": {
+        "alice": {
+          "anchors": 8,
+          "boundary_probes": 2,
+          "index_lookups": 6,
+          "resegment_rows_read": 12,
+          "sessions_created": 1,
+          "sessions_removed": 2
+        }
+      },
+      "resegment_rows_read": 12,
+      "sessions_after": 27999,
+      "sessions_before": 28000,
+      "tracemalloc_peak_kib": 21.1
+    },
+    "bridge_retract": {
+      "boundary_probes": 2,
+      "effective_changes": 8,
+      "elapsed_ms": 5.706,
+      "index_lookups": 14,
+      "noops": 0,
+      "per_user": {
+        "alice": {
+          "anchors": 8,
+          "boundary_probes": 2,
+          "index_lookups": 6,
+          "resegment_rows_read": 4,
+          "sessions_created": 2,
+          "sessions_removed": 1
+        }
+      },
+      "resegment_rows_read": 4,
+      "sessions_after": 28000,
+      "sessions_before": 27999,
+      "tracemalloc_peak_kib": 20.4
+    },
+    "index_plans": [
+      "session range: SEARCH sessions USING INDEX idx_sessions_user_range (user_id=? AND start_ms<?)",
+      "member ordering: SEARCH members USING COVERING INDEX idx_members_user_time (user_id=? AND event_ms>? AND event_ms<?)",
+      "event header: SEARCH events USING COVERING INDEX sqlite_autoindex_events_1 (event_id=?)"
+    ],
+    "locality_assertions": {
+      "no_full_user_scan": true,
+      "rows_read_far_below_active_events": true
+    },
+    "sessions": 28000,
+    "single_event_time_change": {
+      "boundary_probes": 2,
+      "effective_changes": 1,
+      "elapsed_ms": 5.314,
+      "index_lookups": 7,
+      "noops": 0,
+      "per_user": {
+        "alice": {
+          "anchors": 2,
+          "boundary_probes": 2,
+          "index_lookups": 6,
+          "resegment_rows_read": 2,
+          "sessions_created": 2,
+          "sessions_removed": 1
+        }
+      },
+      "resegment_rows_read": 2,
+      "sessions_after": 28001,
+      "sessions_before": 28000,
+      "tracemalloc_peak_kib": 15.1
+    }
+  }
+}

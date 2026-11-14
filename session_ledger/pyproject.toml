@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "session-ledger"
+version = "1.0.0"
+description = "Business-time event/session ledger with corrected JSONL patches on SQLite"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Reserve Data Tools" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+session-ledger = "session_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["session_ledger*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
