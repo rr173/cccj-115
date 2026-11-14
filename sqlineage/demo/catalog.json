@@ -1,0 +1,19 @@
+{
+  "relations": [
+    {
+      "schema": "sales",
+      "table": "orders",
+      "columns": ["id", "cust_id", "amount", "status"]
+    },
+    {
+      "schema": "sales",
+      "table": "customers",
+      "columns": ["id", "name", "tier"]
+    },
+    {
+      "schema": "mkt",
+      "table": "customers",
+      "columns": ["id", "segment"]
+    }
+  ]
+}

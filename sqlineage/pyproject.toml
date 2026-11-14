@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sql-lineage"
+version = "1.0.0"
+description = "Static field-level SQL lineage for a documented SQL subset (no database access)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Data Platform"}]
+keywords = ["sql", "lineage", "data-governance", "static-analysis", "jsonl"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+sql-lineage = "sql_lineage.__main__:main"
+
+[tool.setuptools]
+packages = ["sql_lineage"]
