@@ -1,0 +1,33 @@
+  0  signature, 11 bytes: 50 47 43 4f 50 59 0a ff 0d 0a 00
+ 11  flags int32 = 0
+ 15  extension header length int32 = 0
+ 19  tuple 1 field count int16 = 13
+ 21  id      length int32 = -1 (SQL NULL)
+ 25  neg     length 8, body at 29: int64 -9007199254740993 (= 0xffdfffffffffffff, beyond JSON float exactness)
+ 37  label   length 0 at 37, body empty at 41 (empty text, not NULL)
+ 41  raw     length 4, body at 45: 00 ff 10 80
+ 49  uid     length 16, body at 53: 123e4567 e89b 12d3 a456 426614174000
+ 69  amount  length 30 at 69: ndigits 11, weight 7, sign 0x0000, dscale 13, groups 0012 0d80 1ed2 04d2 162e 2334 0d80 1ed2 04d2 162e 2328
+103  zero4   length 8 at 103: ndigits 0, weight 0, sign 0, dscale 4 -> 0.0000 (not 0)
+115  d       length 4, body at 119: 80000000 = -infinity
+123  ts      length 8, body at 127: 7fffffffffffffff = +infinity
+135  tz      length 8, body at 139: 8000000000000000 = -infinity (timestamptz, not timestamp)
+147  grid    length -1 (NULL array)
+151  notes   length -1 (NULL array)
+155  ranks   length -1 (NULL array)
+159  tuple 2 field count int16 = 13
+161  id      length 4, body at 165: 00000000 = 0
+169  neg     length 8, body at 173: 0
+181  label   length 5, body at 185: 'plain'
+190  raw     length 0 (empty byte string, body at 194)
+194  uid     length 16, body at 198: all zero
+214  amount  length 12, body at 218: ndigits 2, weight 0, sign 0x4000, dscale 4, groups 0001 08fc -> -1.2300
+230  zero4   length 8, body at 234: ndigits 0, sign 0xc000 = NaN
+242  d       length 4, body at 246: 0 = 2000-01-01
+250  ts      length 8, body at 254: 0 = 2000-01-01 00:00:00
+262  tz      length 8, body at 266: 00000000d693a400 = 3600000000 us = 2000-01-01 01:00:00+00
+274  grid    length 56 at 274: dims 2, hasnull 1, oid 23, (2, 0), (2, -3); elements 11, NULL, 13, 14
+334  notes   length 46 at 334: dims 2, hasnull 1, oid 25, (2, 0), (2, -3); elements "", NULL, "ok", ""
+384  ranks   length 36 at 384: dims 1, hasnull 0, oid 1700, (1, 0); element 1.2300
+424  end marker int16 = -1
+426  file size (no trailing bytes after the end marker)

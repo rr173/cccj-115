@@ -1,0 +1,46 @@
+{
+  "README.txt": {
+    "bytes": 4376,
+    "sha256": "31778ab67d0674c749d4d15bc1e83415d6c761f8119b6bd8b0ff01343614650f"
+  },
+  "arrays.copy": {
+    "bytes": 354,
+    "sha256": "21f535801a40c7099e55da0e382b9bf6751c3a35b468a1de272e8907f888c56f"
+  },
+  "arrays.jsonl": {
+    "bytes": 604,
+    "sha256": "2e4328c1b505d98568d3e03f2c4b8f87a7a1ebbabb963ca4958204dbe974259f"
+  },
+  "arrays.offsets.txt": {
+    "bytes": 732,
+    "sha256": "ac9112c4eb41261402523807afe6b90a77829b031c4e11a5409618bda6cc6cb4"
+  },
+  "arrays_catalogue.json": {
+    "bytes": 256,
+    "sha256": "794bf34a977062847b89af3ed9a53bec5bcc13076bd9bd365f2e69385229a581"
+  },
+  "catalogue.json": {
+    "bytes": 772,
+    "sha256": "d555901c79b4c807ad34b25146a6d8260a7fce7257875966717c687b774db5a4"
+  },
+  "empty.copy": {
+    "bytes": 21,
+    "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02"
+  },
+  "interop.sql": {
+    "bytes": 3139,
+    "sha256": "54e565a5f9ed9fc52cfad59f28fd4c83222f01b0760b8a1184e0c05cb11bec24"
+  },
+  "sample.copy": {
+    "bytes": 426,
+    "sha256": "da196a14210c4e987567949bd4b9b43f0eed2d9dd85657067ec9298668eb8718"
+  },
+  "sample.jsonl": {
+    "bytes": 920,
+    "sha256": "e30cfeac31e46e952d335e7d94fb171835f281b0f16cd281388937efd83340aa"
+  },
+  "sample.offsets.txt": {
+    "bytes": 2062,
+    "sha256": "c47856654d55bbaff73e8fa1245521e12a6fe40df7b26de3e1ba9625ae195e91"
+  }
+}

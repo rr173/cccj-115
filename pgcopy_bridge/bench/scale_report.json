@@ -1,0 +1,28 @@
+{
+  "rows": 200000,
+  "chunk_size": 65536,
+  "input_jsonl_bytes": 42844443,
+  "output_copy_bytes": 32379941,
+  "encoded_tuples": 200000,
+  "decoded_tuples": 200000,
+  "decoded_lines": 200000,
+  "phases": [
+    {
+      "phase": "encode",
+      "seconds": 43.067,
+      "tracemalloc_peak_mb": 0.32,
+      "maxrss_mb": 13.57,
+      "maxrss_before_mb": 12.82,
+      "result": 200000
+    },
+    {
+      "phase": "decode",
+      "seconds": 72.648,
+      "tracemalloc_peak_mb": 0.07,
+      "maxrss_mb": 13.57,
+      "maxrss_before_mb": 13.57,
+      "result": 200000
+    }
+  ],
+  "note": "tracemalloc_peak_mb measures Python allocations during the phase; maxrss_mb is process-wide. Neither should grow proportionally with --rows."
+}

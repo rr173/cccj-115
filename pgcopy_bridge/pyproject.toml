@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgcopy-bridge"
+version = "1.0.0"
+description = "Bidirectional PostgreSQL binary COPY <-> typed UTF-8 JSONL converter driven by an explicit column catalogue"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Reserve Data Tools" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+pgcopy = "pgcopy_bridge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pgcopy_bridge*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

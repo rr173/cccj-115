@@ -1,0 +1,12 @@
+0      signature
+11     flags 0
+15     extension header length 0
+19     tuple 1 field count int16 = 4
+21     tag   length int32 = 4, body 00000001
+29     grid  length int32 = 56 at 29: ndim 2, hasnull 1, oid 23, dims (2, 0), (2, -3), 4 elements
+89     notes length int32 = 46 at 89: ndim 2, hasnull 1, oid 25, dims (2, 0), (2, -3), elements empty-text, NULL, ok, empty-text
+139    ranks length int32 = 48 at 139: ndim 2, hasnull 1, oid 1700, dims (2, 0), (1, 4): element 1.2300 then NULL
+191    tuple 2 field count int16 = 4 (zero-dimension arrays and a NULL array)
+237    tuple 3 field count int16 = 4 (1-D arrays, lower bound 0 and -2, empty array with shape [0])
+352    end marker int16 = -1
+354    file size (no trailing bytes)

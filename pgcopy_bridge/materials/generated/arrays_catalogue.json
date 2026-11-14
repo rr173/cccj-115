@@ -1,0 +1,20 @@
+{
+  "columns": [
+    {
+      "name": "tag",
+      "type": "int4"
+    },
+    {
+      "name": "grid",
+      "type": "int4[]"
+    },
+    {
+      "name": "notes",
+      "type": "text[]"
+    },
+    {
+      "name": "ranks",
+      "type": "numeric[]"
+    }
+  ]
+}

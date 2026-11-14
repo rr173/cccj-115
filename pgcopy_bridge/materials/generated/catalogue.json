@@ -1,0 +1,56 @@
+{
+  "columns": [
+    {
+      "name": "id",
+      "type": "int4"
+    },
+    {
+      "name": "neg",
+      "type": "int8"
+    },
+    {
+      "name": "label",
+      "type": "text"
+    },
+    {
+      "name": "raw",
+      "type": "bytea"
+    },
+    {
+      "name": "uid",
+      "type": "uuid"
+    },
+    {
+      "name": "amount",
+      "type": "numeric"
+    },
+    {
+      "name": "zero4",
+      "type": "numeric"
+    },
+    {
+      "name": "d",
+      "type": "date"
+    },
+    {
+      "name": "ts",
+      "type": "timestamp"
+    },
+    {
+      "name": "tz",
+      "type": "timestamptz"
+    },
+    {
+      "name": "grid",
+      "type": "int4[]"
+    },
+    {
+      "name": "notes",
+      "type": "text[]"
+    },
+    {
+      "name": "ranks",
+      "type": "numeric[]"
+    }
+  ]
+}

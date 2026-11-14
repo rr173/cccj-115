@@ -1,0 +1,3 @@
+{"tag":1,"grid":{"shape":[2,2],"lower_bounds":[0,-3],"elements":[7,null,9,10]},"notes":{"shape":[2,2],"lower_bounds":[0,-3],"elements":["",null,"ok",""]},"ranks":{"shape":[2,1],"lower_bounds":[0,4],"elements":[{"ndigits":2,"weight":0,"sign":0,"dscale":4,"digits":[1,2300]},null]}}
+{"tag":2,"grid":{"shape":[],"lower_bounds":[],"elements":[]},"notes":{"shape":[],"lower_bounds":[],"elements":[]},"ranks":null}
+{"tag":3,"grid":{"shape":[3],"lower_bounds":[0],"elements":[5,null,-6]},"notes":{"shape":[3],"lower_bounds":[0],"elements":["",null,"q"]},"ranks":{"shape":[0],"lower_bounds":[-2],"elements":[]}}
