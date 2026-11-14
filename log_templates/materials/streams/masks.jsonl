@@ -1,0 +1,5 @@
+{"source": "s", "seq": 0, "message": "from 10.0.0.1 port 80"}
+{"source": "s", "seq": 1, "message": "from 7 port 443"}
+{"source": "s", "seq": 2, "message": "from 550e8400-e29b-41d4-a716-446655440000 port 8080"}
+{"source": "s", "seq": 3, "message": "peer 256.0.0.1 down"}
+{"source": "s", "seq": 4, "message": "peer 999.1.1.1 down"}

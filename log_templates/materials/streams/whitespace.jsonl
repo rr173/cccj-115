@@ -1,0 +1,6 @@
+{"source": "s", "seq": 0, "message": ""}
+{"source": "s", "seq": 1, "message": " \t\n "}
+{"source": "s", "seq": 2, "message": "   "}
+{"source": "s", "seq": 3, "message": "  aa\tbb  "}
+{"source": "s", "seq": 4, "message": "aa  bb"}
+{"source": "s", "seq": 5, "message": "aa\tbb"}

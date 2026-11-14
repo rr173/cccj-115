@@ -1,0 +1,2717 @@
+{
+  "format": "logtempl-expected-materials/1",
+  "scenarios": {
+    "gradual": {
+      "depth": 2,
+      "final_revision": 3,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          1,
+          3
+        ],
+        "3": [
+          1,
+          3
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "job 17 started on node a1",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "job",
+              "word": "job"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "INT",
+              "word": "17"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "started",
+              "word": "started"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "on",
+              "word": "on"
+            },
+            {
+              "kind": "literal",
+              "position": 4,
+              "value": "node",
+              "word": "node"
+            },
+            {
+              "kind": "literal",
+              "position": 5,
+              "value": "a1",
+              "word": "a1"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "job <INT> started on node a1",
+          "template_revision": 1,
+          "word_count": 6
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "job 18 started on node b2",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "job",
+              "word": "job"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "INT",
+              "word": "18"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "started",
+              "word": "started"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "on",
+              "word": "on"
+            },
+            {
+              "kind": "literal",
+              "position": 4,
+              "value": "node",
+              "word": "node"
+            },
+            {
+              "kind": "literal",
+              "position": 5,
+              "value": "b2",
+              "word": "b2"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 1,
+          "template_render": "job <INT> started on node <*>",
+          "template_revision": 2,
+          "word_count": 6
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "job 19 finished on node b2",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "job",
+              "word": "job"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "INT",
+              "word": "19"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "finished",
+              "word": "finished"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "on",
+              "word": "on"
+            },
+            {
+              "kind": "literal",
+              "position": 4,
+              "value": "node",
+              "word": "node"
+            },
+            {
+              "kind": "literal",
+              "position": 5,
+              "value": "b2",
+              "word": "b2"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 1,
+          "template_render": "job <INT> <*> on node <*>",
+          "template_revision": 3,
+          "word_count": 6
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "job 20 started on node c3",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "job",
+              "word": "job"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "INT",
+              "word": "20"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "started",
+              "word": "started"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "on",
+              "word": "on"
+            },
+            {
+              "kind": "literal",
+              "position": 4,
+              "value": "node",
+              "word": "node"
+            },
+            {
+              "kind": "literal",
+              "position": 5,
+              "value": "c3",
+              "word": "c3"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 3,
+          "template_id": 1,
+          "template_render": "job <INT> <*> on node <*>",
+          "template_revision": 3,
+          "word_count": 6
+        }
+      ],
+      "messages": [
+        "job 17 started on node a1",
+        "job 18 started on node b2",
+        "job 19 finished on node b2",
+        "job 20 started on node c3"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [
+            [
+              "lit",
+              "job"
+            ],
+            [
+              "mask",
+              "INT"
+            ],
+            [
+              "lit",
+              "started"
+            ],
+            [
+              "lit",
+              "on"
+            ],
+            [
+              "lit",
+              "node"
+            ],
+            [
+              "lit",
+              "a1"
+            ]
+          ],
+          "render": "job <INT> started on node a1"
+        },
+        "1@2": {
+          "items": [
+            [
+              "lit",
+              "job"
+            ],
+            [
+              "mask",
+              "INT"
+            ],
+            [
+              "lit",
+              "started"
+            ],
+            [
+              "lit",
+              "on"
+            ],
+            [
+              "lit",
+              "node"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ],
+          "render": "job <INT> started on node <*>"
+        },
+        "1@3": {
+          "items": [
+            [
+              "lit",
+              "job"
+            ],
+            [
+              "mask",
+              "INT"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "on"
+            ],
+            [
+              "lit",
+              "node"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ],
+          "render": "job <INT> <*> on node <*>"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 6,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 5,
+            "revision": 2,
+            "score": "5/6",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 3,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 2
+          }
+        ],
+        "1": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 5,
+            "revision": 1,
+            "score": "5/6",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 5,
+            "revision": 2,
+            "score": "5/6",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 3,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 2
+          }
+        ],
+        "2": [
+          {
+            "differing": 2,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 1,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 2,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 3,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 2
+          }
+        ],
+        "3": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 5,
+            "revision": 1,
+            "score": "5/6",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 5,
+            "revision": 2,
+            "score": "5/6",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 3,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 2
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "job <INT> <*> on node <*>",
+          "items": [
+            [
+              "lit",
+              "job"
+            ],
+            [
+              "mask",
+              "INT"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "on"
+            ],
+            [
+              "lit",
+              "node"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ]
+        }
+      },
+      "threshold": "0.5"
+    },
+    "literal_wildcard": {
+      "depth": 2,
+      "final_revision": 3,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          2,
+          3
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "pattern <*> here",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "pattern",
+              "word": "pattern"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "<*>",
+              "word": "<*>"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "here",
+              "word": "here"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "pattern LIT(<*>) here",
+          "template_revision": 1,
+          "word_count": 3
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "pattern <*> there",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "pattern",
+              "word": "pattern"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "<*>",
+              "word": "<*>"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "there",
+              "word": "there"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 1,
+          "template_render": "pattern LIT(<*>) <*>",
+          "template_revision": 2,
+          "word_count": 3
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "pattern x there",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "pattern",
+              "word": "pattern"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "x",
+              "word": "x"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "there",
+              "word": "there"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 2,
+          "template_render": "pattern x there",
+          "template_revision": 3,
+          "word_count": 3
+        }
+      ],
+      "messages": [
+        "pattern <*> here",
+        "pattern <*> there",
+        "pattern x there"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [
+            [
+              "lit",
+              "pattern"
+            ],
+            [
+              "lit",
+              "<*>"
+            ],
+            [
+              "lit",
+              "here"
+            ]
+          ],
+          "render": "pattern LIT(<*>) here"
+        },
+        "1@2": {
+          "items": [
+            [
+              "lit",
+              "pattern"
+            ],
+            [
+              "lit",
+              "<*>"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ],
+          "render": "pattern LIT(<*>) <*>"
+        },
+        "2@3": {
+          "items": [
+            [
+              "lit",
+              "pattern"
+            ],
+            [
+              "lit",
+              "x"
+            ],
+            [
+              "lit",
+              "there"
+            ]
+          ],
+          "render": "pattern x there"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 2,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 2,
+            "meets_threshold": false,
+            "points": 1,
+            "revision": 3,
+            "score": "1/3",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ],
+        "1": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 1,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 2,
+            "score": "2/3",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 3,
+            "score": "2/3",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ],
+        "2": [
+          {
+            "differing": 2,
+            "meets_threshold": false,
+            "points": 1,
+            "revision": 1,
+            "score": "1/3",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 1,
+            "meets_threshold": false,
+            "points": 1,
+            "revision": 2,
+            "score": "1/3",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 3,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "pattern LIT(<*>) <*>",
+          "items": [
+            [
+              "lit",
+              "pattern"
+            ],
+            [
+              "lit",
+              "<*>"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ]
+        },
+        "2": {
+          "final_render": "pattern x there",
+          "items": [
+            [
+              "lit",
+              "pattern"
+            ],
+            [
+              "lit",
+              "x"
+            ],
+            [
+              "lit",
+              "there"
+            ]
+          ]
+        }
+      },
+      "threshold": "0.5"
+    },
+    "masks": {
+      "depth": 2,
+      "final_revision": 4,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          1,
+          2
+        ],
+        "3": [
+          2,
+          3
+        ],
+        "4": [
+          2,
+          4
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "from 10.0.0.1 port 80",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "from",
+              "word": "from"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "IPV4",
+              "word": "10.0.0.1"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "port",
+              "word": "port"
+            },
+            {
+              "kind": "mask",
+              "position": 3,
+              "value": "INT",
+              "word": "80"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "from <IPV4> port <INT>",
+          "template_revision": 1,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "from 7 port 443",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "from",
+              "word": "from"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "INT",
+              "word": "7"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "port",
+              "word": "port"
+            },
+            {
+              "kind": "mask",
+              "position": 3,
+              "value": "INT",
+              "word": "443"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 1,
+          "template_render": "from <*> port <INT>",
+          "template_revision": 2,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "from 550e8400-e29b-41d4-a716-446655440000 port 8080",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "from",
+              "word": "from"
+            },
+            {
+              "kind": "mask",
+              "position": 1,
+              "value": "UUID",
+              "word": "550e8400-e29b-41d4-a716-446655440000"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "port",
+              "word": "port"
+            },
+            {
+              "kind": "mask",
+              "position": 3,
+              "value": "INT",
+              "word": "8080"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 1,
+          "template_render": "from <*> port <INT>",
+          "template_revision": 2,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "peer 256.0.0.1 down",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "peer",
+              "word": "peer"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "256.0.0.1",
+              "word": "256.0.0.1"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "down",
+              "word": "down"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 3,
+          "template_id": 2,
+          "template_render": "peer 256.0.0.1 down",
+          "template_revision": 3,
+          "word_count": 3
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "peer 999.1.1.1 down",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "peer",
+              "word": "peer"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "999.1.1.1",
+              "word": "999.1.1.1"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "down",
+              "word": "down"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 4,
+          "template_id": 2,
+          "template_render": "peer <*> down",
+          "template_revision": 4,
+          "word_count": 3
+        }
+      ],
+      "messages": [
+        "from 10.0.0.1 port 80",
+        "from 7 port 443",
+        "from 550e8400-e29b-41d4-a716-446655440000 port 8080",
+        "peer 256.0.0.1 down",
+        "peer 999.1.1.1 down"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [
+            [
+              "lit",
+              "from"
+            ],
+            [
+              "mask",
+              "IPV4"
+            ],
+            [
+              "lit",
+              "port"
+            ],
+            [
+              "mask",
+              "INT"
+            ]
+          ],
+          "render": "from <IPV4> port <INT>"
+        },
+        "1@2": {
+          "items": [
+            [
+              "lit",
+              "from"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "port"
+            ],
+            [
+              "mask",
+              "INT"
+            ]
+          ],
+          "render": "from <*> port <INT>"
+        },
+        "2@3": {
+          "items": [
+            [
+              "lit",
+              "peer"
+            ],
+            [
+              "lit",
+              "256.0.0.1"
+            ],
+            [
+              "lit",
+              "down"
+            ]
+          ],
+          "render": "peer 256.0.0.1 down"
+        },
+        "2@4": {
+          "items": [
+            [
+              "lit",
+              "peer"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "down"
+            ]
+          ],
+          "render": "peer <*> down"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ],
+        "1": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ],
+        "2": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ],
+        "3": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 3,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 4,
+            "score": "2/3",
+            "template_id": 2,
+            "wildcards": 1
+          }
+        ],
+        "4": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 3,
+            "score": "2/3",
+            "template_id": 2,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 4,
+            "score": "2/3",
+            "template_id": 2,
+            "wildcards": 1
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "from <*> port <INT>",
+          "items": [
+            [
+              "lit",
+              "from"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "port"
+            ],
+            [
+              "mask",
+              "INT"
+            ]
+          ]
+        },
+        "2": {
+          "final_render": "peer <*> down",
+          "items": [
+            [
+              "lit",
+              "peer"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "down"
+            ]
+          ]
+        }
+      },
+      "threshold": "0.5"
+    },
+    "prefix_relink": {
+      "depth": 2,
+      "final_revision": 2,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          1,
+          2
+        ],
+        "3": [
+          1,
+          2
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "alpha beta gamma delta",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "alpha",
+              "word": "alpha"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "beta",
+              "word": "beta"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "gamma",
+              "word": "gamma"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "delta",
+              "word": "delta"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "alpha beta gamma delta",
+          "template_revision": 1,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "alpha omega gamma delta",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "alpha",
+              "word": "alpha"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "omega",
+              "word": "omega"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "gamma",
+              "word": "gamma"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "delta",
+              "word": "delta"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 1,
+          "template_render": "alpha <*> gamma delta",
+          "template_revision": 2,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "alpha zeta gamma delta",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "alpha",
+              "word": "alpha"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "zeta",
+              "word": "zeta"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "gamma",
+              "word": "gamma"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "delta",
+              "word": "delta"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 1,
+          "template_render": "alpha <*> gamma delta",
+          "template_revision": 2,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "alpha omega gamma delta",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "alpha",
+              "word": "alpha"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "omega",
+              "word": "omega"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "gamma",
+              "word": "gamma"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "delta",
+              "word": "delta"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 3,
+          "template_id": 1,
+          "template_render": "alpha <*> gamma delta",
+          "template_revision": 2,
+          "word_count": 4
+        }
+      ],
+      "messages": [
+        "alpha beta gamma delta",
+        "alpha omega gamma delta",
+        "alpha zeta gamma delta",
+        "alpha omega gamma delta"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [
+            [
+              "lit",
+              "alpha"
+            ],
+            [
+              "lit",
+              "beta"
+            ],
+            [
+              "lit",
+              "gamma"
+            ],
+            [
+              "lit",
+              "delta"
+            ]
+          ],
+          "render": "alpha beta gamma delta"
+        },
+        "1@2": {
+          "items": [
+            [
+              "lit",
+              "alpha"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "gamma"
+            ],
+            [
+              "lit",
+              "delta"
+            ]
+          ],
+          "render": "alpha <*> gamma delta"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ],
+        "1": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ],
+        "2": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ],
+        "3": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "alpha <*> gamma delta",
+          "items": [
+            [
+              "lit",
+              "alpha"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "gamma"
+            ],
+            [
+              "lit",
+              "delta"
+            ]
+          ]
+        }
+      },
+      "threshold": "0.5"
+    },
+    "tie": {
+      "depth": 2,
+      "final_revision": 3,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          2,
+          2
+        ],
+        "2": [
+          1,
+          3
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "aa bb cc dd",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "bb",
+              "word": "bb"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "cc",
+              "word": "cc"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "dd",
+              "word": "dd"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "aa bb cc dd",
+          "template_revision": 1,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "ee ff gg hh",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "ee",
+              "word": "ee"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "ff",
+              "word": "ff"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "gg",
+              "word": "gg"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "hh",
+              "word": "hh"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 2,
+          "template_render": "ee ff gg hh",
+          "template_revision": 2,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "aa bb gg hh",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "bb",
+              "word": "bb"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "gg",
+              "word": "gg"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "hh",
+              "word": "hh"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 1,
+          "template_render": "aa bb <*> <*>",
+          "template_revision": 3,
+          "word_count": 4
+        }
+      ],
+      "messages": [
+        "aa bb cc dd",
+        "ee ff gg hh",
+        "aa bb gg hh"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "bb"
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "lit",
+              "dd"
+            ]
+          ],
+          "render": "aa bb cc dd"
+        },
+        "1@3": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "bb"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ],
+          "render": "aa bb <*> <*>"
+        },
+        "2@2": {
+          "items": [
+            [
+              "lit",
+              "ee"
+            ],
+            [
+              "lit",
+              "ff"
+            ],
+            [
+              "lit",
+              "gg"
+            ],
+            [
+              "lit",
+              "hh"
+            ]
+          ],
+          "render": "ee ff gg hh"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 3,
+            "score": "1/2",
+            "template_id": 1,
+            "wildcards": 2
+          },
+          {
+            "differing": 4,
+            "meets_threshold": false,
+            "points": 0,
+            "revision": 2,
+            "score": "0/1",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ],
+        "1": [
+          {
+            "differing": 4,
+            "meets_threshold": false,
+            "points": 0,
+            "revision": 1,
+            "score": "0/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 2,
+            "meets_threshold": false,
+            "points": 0,
+            "revision": 3,
+            "score": "0/1",
+            "template_id": 1,
+            "wildcards": 2
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 2,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ],
+        "2": [
+          {
+            "differing": 2,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 1,
+            "score": "1/2",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 3,
+            "score": "1/2",
+            "template_id": 1,
+            "wildcards": 2
+          },
+          {
+            "differing": 2,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 2,
+            "score": "1/2",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "aa bb <*> <*>",
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "bb"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ]
+        },
+        "2": {
+          "final_render": "ee ff gg hh",
+          "items": [
+            [
+              "lit",
+              "ee"
+            ],
+            [
+              "lit",
+              "ff"
+            ],
+            [
+              "lit",
+              "gg"
+            ],
+            [
+              "lit",
+              "hh"
+            ]
+          ]
+        }
+      },
+      "threshold": "0.5"
+    },
+    "whitespace": {
+      "depth": 2,
+      "final_revision": 2,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          1,
+          1
+        ],
+        "2": [
+          1,
+          1
+        ],
+        "3": [
+          2,
+          2
+        ],
+        "4": [
+          2,
+          2
+        ],
+        "5": [
+          2,
+          2
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            ""
+          ],
+          "message": "",
+          "parameters": [],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "",
+          "template_revision": 1,
+          "word_count": 0
+        },
+        {
+          "gaps": [
+            " \t\n "
+          ],
+          "message": " \t\n ",
+          "parameters": [],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 1,
+          "template_render": "",
+          "template_revision": 1,
+          "word_count": 0
+        },
+        {
+          "gaps": [
+            "   "
+          ],
+          "message": "   ",
+          "parameters": [],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 1,
+          "template_render": "",
+          "template_revision": 1,
+          "word_count": 0
+        },
+        {
+          "gaps": [
+            "  ",
+            "\t",
+            "  "
+          ],
+          "message": "  aa\tbb  ",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "bb",
+              "word": "bb"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 3,
+          "template_id": 2,
+          "template_render": "aa bb",
+          "template_revision": 2,
+          "word_count": 2
+        },
+        {
+          "gaps": [
+            "",
+            "  ",
+            ""
+          ],
+          "message": "aa  bb",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "bb",
+              "word": "bb"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 4,
+          "template_id": 2,
+          "template_render": "aa bb",
+          "template_revision": 2,
+          "word_count": 2
+        },
+        {
+          "gaps": [
+            "",
+            "\t",
+            ""
+          ],
+          "message": "aa\tbb",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "bb",
+              "word": "bb"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 5,
+          "template_id": 2,
+          "template_render": "aa bb",
+          "template_revision": 2,
+          "word_count": 2
+        }
+      ],
+      "messages": [
+        "",
+        " \t\n ",
+        "   ",
+        "  aa\tbb  ",
+        "aa  bb",
+        "aa\tbb"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [],
+          "render": ""
+        },
+        "2@2": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "bb"
+            ]
+          ],
+          "render": "aa bb"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 0,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          }
+        ],
+        "1": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 0,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          }
+        ],
+        "2": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 0,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          }
+        ],
+        "3": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 2,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ],
+        "4": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 2,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ],
+        "5": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 2,
+            "revision": 2,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "",
+          "items": []
+        },
+        "2": {
+          "final_render": "aa bb",
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "bb"
+            ]
+          ]
+        }
+      },
+      "threshold": "1"
+    },
+    "wildcard_tie": {
+      "depth": 2,
+      "final_revision": 4,
+      "masks": "IPV4,UUID,INT",
+      "members": {
+        "0": [
+          1,
+          1
+        ],
+        "1": [
+          2,
+          2
+        ],
+        "2": [
+          1,
+          3
+        ],
+        "3": [
+          2,
+          4
+        ]
+      },
+      "message_rows": [
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "aa bb cc dd",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "bb",
+              "word": "bb"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "cc",
+              "word": "cc"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "dd",
+              "word": "dd"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 0,
+          "template_id": 1,
+          "template_render": "aa bb cc dd",
+          "template_revision": 1,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "aa ff cc ee",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "ff",
+              "word": "ff"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "cc",
+              "word": "cc"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "ee",
+              "word": "ee"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 1,
+          "template_id": 2,
+          "template_render": "aa ff cc ee",
+          "template_revision": 2,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "aa QQ cc dd",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "QQ",
+              "word": "QQ"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "cc",
+              "word": "cc"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "dd",
+              "word": "dd"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 2,
+          "template_id": 1,
+          "template_render": "aa <*> cc dd",
+          "template_revision": 3,
+          "word_count": 4
+        },
+        {
+          "gaps": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "message": "aa ff cc dd",
+          "parameters": [
+            {
+              "kind": "literal",
+              "position": 0,
+              "value": "aa",
+              "word": "aa"
+            },
+            {
+              "kind": "literal",
+              "position": 1,
+              "value": "ff",
+              "word": "ff"
+            },
+            {
+              "kind": "literal",
+              "position": 2,
+              "value": "cc",
+              "word": "cc"
+            },
+            {
+              "kind": "literal",
+              "position": 3,
+              "value": "dd",
+              "word": "dd"
+            }
+          ],
+          "reconstructs": true,
+          "seq": 3,
+          "template_id": 2,
+          "template_render": "aa ff cc <*>",
+          "template_revision": 4,
+          "word_count": 4
+        }
+      ],
+      "messages": [
+        "aa bb cc dd",
+        "aa ff cc ee",
+        "aa QQ cc dd",
+        "aa ff cc dd"
+      ],
+      "revisions": {
+        "1@1": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "bb"
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "lit",
+              "dd"
+            ]
+          ],
+          "render": "aa bb cc dd"
+        },
+        "1@3": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "lit",
+              "dd"
+            ]
+          ],
+          "render": "aa <*> cc dd"
+        },
+        "2@2": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "ff"
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "lit",
+              "ee"
+            ]
+          ],
+          "render": "aa ff cc ee"
+        },
+        "2@4": {
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "ff"
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ],
+          "render": "aa ff cc <*>"
+        }
+      },
+      "scores": {
+        "0": [
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 1,
+            "score": "1/1",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 3,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 2,
+            "meets_threshold": false,
+            "points": 2,
+            "revision": 2,
+            "score": "1/2",
+            "template_id": 2,
+            "wildcards": 0
+          },
+          {
+            "differing": 1,
+            "meets_threshold": false,
+            "points": 2,
+            "revision": 4,
+            "score": "1/2",
+            "template_id": 2,
+            "wildcards": 1
+          }
+        ],
+        "1": [
+          {
+            "differing": 2,
+            "meets_threshold": false,
+            "points": 2,
+            "revision": 1,
+            "score": "1/2",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 1,
+            "meets_threshold": false,
+            "points": 2,
+            "revision": 3,
+            "score": "1/2",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 4,
+            "revision": 2,
+            "score": "1/1",
+            "template_id": 2,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 4,
+            "score": "3/4",
+            "template_id": 2,
+            "wildcards": 1
+          }
+        ],
+        "2": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 3,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 2,
+            "meets_threshold": false,
+            "points": 2,
+            "revision": 2,
+            "score": "1/2",
+            "template_id": 2,
+            "wildcards": 0
+          },
+          {
+            "differing": 1,
+            "meets_threshold": false,
+            "points": 2,
+            "revision": 4,
+            "score": "1/2",
+            "template_id": 2,
+            "wildcards": 1
+          }
+        ],
+        "3": [
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 1,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 3,
+            "score": "3/4",
+            "template_id": 1,
+            "wildcards": 1
+          },
+          {
+            "differing": 1,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 2,
+            "score": "3/4",
+            "template_id": 2,
+            "wildcards": 0
+          },
+          {
+            "differing": 0,
+            "meets_threshold": true,
+            "points": 3,
+            "revision": 4,
+            "score": "3/4",
+            "template_id": 2,
+            "wildcards": 1
+          }
+        ]
+      },
+      "templates": {
+        "1": {
+          "final_render": "aa <*> cc dd",
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "wild",
+              ""
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "lit",
+              "dd"
+            ]
+          ]
+        },
+        "2": {
+          "final_render": "aa ff cc <*>",
+          "items": [
+            [
+              "lit",
+              "aa"
+            ],
+            [
+              "lit",
+              "ff"
+            ],
+            [
+              "lit",
+              "cc"
+            ],
+            [
+              "wild",
+              ""
+            ]
+          ]
+        }
+      },
+      "threshold": "0.75"
+    }
+  }
+}

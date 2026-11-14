@@ -1,0 +1,4 @@
+{"source": "s", "seq": 0, "message": "job 17 started on node a1"}
+{"source": "s", "seq": 1, "message": "job 18 started on node b2"}
+{"source": "s", "seq": 2, "message": "job 19 finished on node b2"}
+{"source": "s", "seq": 3, "message": "job 20 started on node c3"}
